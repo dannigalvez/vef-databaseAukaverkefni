@@ -1,6 +1,7 @@
 # þurfum að setja pymysql upp í pyCharm (sama rútína og bottle-beaker)
 import pymysql
 from bottle import *
+import os
 
 @route('/')
 def index():
@@ -131,4 +132,4 @@ def nyrbill():
 
     redirect('/')
 
-run()
+run(host="0.0.0.0", port=os.envrion.get("PORT"))

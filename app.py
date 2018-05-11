@@ -132,4 +132,4 @@ def nyrbill():
 
     redirect('/')
 
-run(host="0.0.0.0", port=os.envrion.get("PORT"))
+run(host="0.0.0.0", port=os.environ.get("PORT"))
